@@ -37,6 +37,7 @@ app.get("/users/:username/feed", async (req, res) => {
     posts.collector.forEach((item) => {
         feed.item({
             title: 'New TikTok post by @' + item.authorMeta.name,
+            date: new Date(item.createTime * 1000),
             description: item.text,
             url: 'https://www.tiktok.com/@' + item.authorMeta.name + '/video/' + item.id,
             guid: item.authorMeta.name + '_' + item.id,
