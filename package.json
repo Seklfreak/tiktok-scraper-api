@@ -11,6 +11,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "rss": "^1.2.2",
-    "tiktok-scraper": "^1.1.10"
+    "tiktok-scraper": "^1.1.19"
   }
 }
